@@ -1,6 +1,6 @@
 package com.baonq.training_architecture.data.remote.api.character
 
-import com.baonq.training_architecture.data.entities.CharacterPerson
+import com.baonq.training_architecture.data.entities.Character
 import com.baonq.training_architecture.data.entities.CharacterList
 import retrofit2.Response
 import retrofit2.http.GET
@@ -11,5 +11,5 @@ interface CharacterService {
     suspend fun getAllCharacters() : Response<CharacterList>
 
     @GET("character/{id}")
-    suspend fun getCharacter(@Path("id") id: Int): Response<CharacterPerson>
+    suspend fun getCharacter(@Path("id") id: Int): Response<Character>
 }

@@ -3,8 +3,8 @@ package com.baonq.training_architecture.data.entities
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "characters_person")
-data class CharacterPerson(
+@Entity(tableName = "characters")
+data class Character(
     val created: String,
     val gender: String,
     @PrimaryKey

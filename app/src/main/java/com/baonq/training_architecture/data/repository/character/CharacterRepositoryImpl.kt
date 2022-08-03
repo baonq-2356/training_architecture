@@ -4,7 +4,9 @@ import com.baonq.training_architecture.data.local.character.CharacterDao
 import com.baonq.training_architecture.data.remote.api.character.CharacterRemoteDataSource
 import com.baonq.training_architecture.utils.performGetOperation
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class CharacterRepositoryImpl @Inject constructor(
     private val characterLocalDataSource: CharacterDao,
     private val characterRemoteDataSource: CharacterRemoteDataSource

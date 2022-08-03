@@ -8,14 +8,13 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
-import dagger.hilt.android.internal.managers.ApplicationComponentManager
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
 @InstallIn(ApplicationComponent::class)
-class ApiModule {
+object ApiModule {
 
     @Singleton
     @Provides

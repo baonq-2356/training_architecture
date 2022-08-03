@@ -5,7 +5,6 @@ import com.baonq.training_architecture.data.repository.character.CharacterReposi
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
-import dagger.hilt.android.internal.managers.ApplicationComponentManager
 import dagger.hilt.android.components.ApplicationComponent
 
 @Module
